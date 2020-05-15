@@ -238,7 +238,7 @@ endif
 clean: clean-adds restore-idf
 
 ifdef TOOLCHAIN_COMMIT_DESC
-    ifneq ($(TOOLCHAIN_COMMIT_DESC), $(SUPPORTED_TOOLCHAIN_COMMIT_DESC))
+    ifneq ($(substr TOOLCHAIN_COMMIT_DESC 1 20), $(substr SUPPORTED_TOOLCHAIN_COMMIT_DESC 1 20))
         $(info Toolchain version is not supported: $(TOOLCHAIN_COMMIT_DESC))
         $(info Expected to see version: $(SUPPORTED_TOOLCHAIN_COMMIT_DESC))
         $(info Please check ESP-IDF setup instructions and update the toolchain.)
