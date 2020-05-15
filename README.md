@@ -208,12 +208,13 @@ In our [wiki](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki) you have mor
    cd Lua-RTOS-ESP32
    ```
    
-   Edit the env file and change PATH, IDF_PATH, LIBRARY_PATH, PKG_CONFIG_PATH, CPATH for fit to your installation locations.
+   Edit the env.sh file and change PATH, IDF_PATH, LIBRARY_PATH, PKG_CONFIG_PATH, CPATH for fit to your installation locations.
    
    Now do:
    
    ```lua
-   source ./env
+   . ./env.sh
+   . .prepare.sh
    ```
 
 5. Build:
