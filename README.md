@@ -200,24 +200,30 @@ In our [wiki](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki) you have mor
    git pull origin master
    ```
 
-4. Setup the build environment:
+4. Install packages required for building the toolchain:
+   Install dependencies:
+   ```lua
+   sudo apt-get install gawk gperf grep gettext python python-dev automake bison flex texinfo help2man libtool libtool-bin make
+   ```
+
+5. Setup the build environment:
    
    Go to Lua-RTOS-ESP32 folder:
    
    ```lua
    cd Lua-RTOS-ESP32
    ```
-   
-   Edit the env.sh file and change PATH, IDF_PATH, LIBRARY_PATH, PKG_CONFIG_PATH, CPATH for fit to your installation locations.
+
+   Edit the env file and change PATH, IDF_PATH, LIBRARY_PATH, PKG_CONFIG_PATH, CPATH for fit to your installation locations.
    
    Now do:
    
    ```lua
-   . ./env.sh
-   . .prepare.sh
+   . ./env
+   . ./prepare
    ```
 
-5. Build:
+6. Build:
 
    ```lua
    $ make flash
@@ -242,7 +248,7 @@ In our [wiki](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki) you have mor
    
    When the Lua RTOS build process finish, the board will be flashed. It is possible that for certain operating systems, or boards, the flashing process fails, due to a not compatible device name for your board's USB-TO-SERIAL adapter. In this case change the default configuration to met your board or operating system requirements, as described above.
    
-6. Change the default configuration:
+7. Change the default configuration:
 
    You can change the default configuration:
    
@@ -253,7 +259,7 @@ In our [wiki](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki) you have mor
    Check the device name for your board's USB-TO-SERIAL adapter under the "Serial flasher config / Default serial port" category.
 
 
-7. Build for other board:
+8. Build for other board:
 
    If you have already build Lua RTOS previously and want to build for other board type:
    
