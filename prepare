@@ -32,4 +32,4 @@ export PATH=$TC_PATH/crosstool-NG/builds/xtensa-esp32-elf/bin:$PATH
 
 cd $IDF_PATH && git submodule update --init
 cd ~/work/zim/luartos/Lua-RTOS-ESP32 && git pull origin master
-cd ~/work/zim/luartos/Lua-RTOS-ESP32 && make SDKCONFIG_DEFAULTS=GENERIC defconfig
+cd ~/work/zim/luartos/Lua-RTOS-ESP32 && make SDKCONFIG_DEFAULTS=ESP32-WROVER-ZP defconfig

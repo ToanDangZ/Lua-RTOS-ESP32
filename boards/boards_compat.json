@@ -65,6 +65,11 @@
 		"subtype": ""
 	},
 	{
+		"id": "ESP32-WROVER-ZP",
+		"type": "ESP32-WROVER-ZP",
+		"subtype": ""
+	},
+	{
 		"id": "ESP-WROVER-KIT-OTA",
 		"type": "ESP-WROVER-KIT",
 		"subtype": "OTA"

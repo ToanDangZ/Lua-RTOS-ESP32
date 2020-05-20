@@ -147,6 +147,20 @@
         ]
     },
     {
+        "description": "Zimplistic ESP32-WROVER-ZP",
+        "manufacturer": "Zimplsitic",
+        "image": "http://git.whitecatboard.org/esp-wrover-kit.jpg",
+        "usb_vid_pid": "0403:6010",
+        "usb_port_exp": "^.*B$|^.*1$",
+        "firmwares": [
+            {
+                "id": "ESP32-WROVER-ZP",
+                "description": "Zimplistic ESP32-WROVER-ZP",
+                "filesystem": "default"
+            }
+	]
+    },
+    {
         "description": "SparkFun ESP32 Thing",
         "manufacturer": "SparkFun",
         "image": "http://git.whitecatboard.org/esp32-thing.jpg",

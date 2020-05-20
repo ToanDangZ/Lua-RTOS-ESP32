@@ -58,7 +58,10 @@ menu "Lua RTOS"
       config LUA_RTOS_FIRMWARE_ESP_WROVER_KIT
          bool "Espressif Systems ESP-WROVER-KIT"
 
-      config LUA_RTOS_FIRMWARE_ESP_WROVER_KIT_OTA
+       config LUA_RTOS_FIRMWARE_ESP32_WROVER_ZP
+         bool "Zimplisti ESP32-WROVER-ZP"
+
+     config LUA_RTOS_FIRMWARE_ESP_WROVER_KIT_OTA
          bool "Espressif Systems ESP-WROVER-KIT with OTA"
 
       config LUA_RTOS_FIRMWARE_ESP32_THING
