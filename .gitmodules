@@ -1,0 +1,3 @@
+[submodule "components/qpc"]
+	path = components/qpc
+	url = git@github.com:ToanDangZ/qpc.git
